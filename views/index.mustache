@@ -1,0 +1,24 @@
+<html>
+    <head>
+    <title> mustache </title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    </head>
+    <body>
+        <div class='robots'>
+            {{#users}}
+            <div class='inside-robots'>
+            <image src="{{avatar}}">
+            
+            <div class='name'> {{name}} </div>
+            {{#job}}
+            <div class='job'> {{job}} </div>
+            {{/job}}
+            {{^job}}
+            <div class='nojob'> availible for hire</div>
+            {{/job}}
+            <div class='company'>{{company}} </div>
+            </div> 
+             {{/users}}
+            </div>
+    </body>
+</html>

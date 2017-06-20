@@ -1,0 +1,33 @@
+html{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.robots{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.inside-robots{
+    width: 20%;
+    margin: 10px;
+    padding:11px;
+    border: thin solid black;
+    text-align: center;
+}
+
+.nojob{
+    color:#c57b7b;
+    font-size: 15px;
+}
+.job, .company{
+    font-size: 15px;
+    color: grey;
+}
+.name{
+    color:#4679ca;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 2px;
+}
