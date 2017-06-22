@@ -4,12 +4,12 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
     </head>
     <body>
+    <h3>Index</h3>
         <div class='robots'>
             {{#users}}
             <div class='inside-robots'>
-            <image src="{{avatar}}">
-            
-            <div class='name'> {{name}} </div>
+            <image src="{{avatar}}"> 
+            <a href= "{{id}}"> {{name}} </a>
             {{#job}}
             <div class='job'> {{job}} </div>
             {{/job}}
@@ -20,5 +20,6 @@
             </div> 
              {{/users}}
             </div>
+
     </body>
 </html>

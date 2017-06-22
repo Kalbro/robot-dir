@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Individual Index</title>
+<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+<h2>Individual Index</h2>
+<div class = 'individual_container'>
+<div class='robot_info'>
+<image class= 'pic' src='{{avatar}}'> 
+    <div class= 'top_container'>
+        <div class='name2'>{{name}}</div>
+            {{#address}}
+         <div class='location'>{{city}}, {{country}} | {{job}} | {{company}}</div>
+         {{/address}}
+         <div class='contact_info'>{{email}} | {{phone}}</div>
+            </div>
+             <div class='skills_container'>
+            <div class='education'><b> Education </b> {{university}}</div>
+            <div class='skills'><b> Skills </b> {{skills}}</div>
+            </div>
+     </div>
+</body>
+</html>
