@@ -10,13 +10,21 @@
 <image class= 'pic' src='{{avatar}}'> 
     <div class= 'top_container'>
         <div class='name2'>{{name}}</div>
-            {{#address}}
+            {{#address}}{{#job}}
          <div class='location'>{{city}}, {{country}} | {{job}} | {{company}}</div>
-         {{/address}}
+         {{/job}}
+
+         {{^job}}
+         <div class = 'no_job'>{{city}}, {{country}} | <b style = 'color:red'> Available for Hire</b> | {{company}}</div>
+         {{/job}}{{/address}}
          <div class='contact_info'>{{email}} | {{phone}}</div>
             </div>
              <div class='skills_container'>
+             {{#university}}
             <div class='education'><b> Education </b> {{university}}</div>
+            {{/university}}
+            {{^university}}
+            {{/university}}
             <div class='skills'><b> Skills </b> {{skills}}</div>
             </div>
      </div>

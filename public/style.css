@@ -16,6 +16,7 @@ h3{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    
 }
 
 .inside-robots{
@@ -49,6 +50,7 @@ a:hover{
 
 h2{
     font-size: 40px;
+    margin-left: 60px;
 }
 .pic{
     background: white;
@@ -86,8 +88,12 @@ h2{
 
 .skills_container{
     margin-left: 10%;
-
+    text-align: center;
     
+}
+
+.skills_container .skills{
+    margin-left: 37px;
 }
 
 b{
